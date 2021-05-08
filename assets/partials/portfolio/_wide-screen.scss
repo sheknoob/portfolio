@@ -1,0 +1,10 @@
+@mixin wide-screen {
+  main {
+    font-size: 1.6rem;
+    &.home {
+      .h1 {
+        margin-top: 20vh;
+      }
+    }
+  }
+}

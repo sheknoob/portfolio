@@ -1,0 +1,26 @@
+@mixin low-resolution-tablet {
+  main {
+    .social-media {
+      text-align: center;
+    }
+
+    &.home {
+      .h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1;
+        margin: 0.9rem 0 2rem 0;
+      }
+
+      .h2 {
+        margin: auto;
+        text-align: center;
+      }
+    }
+
+    .social-media {
+      font-size: 1.6rem;
+    }
+  }
+}
