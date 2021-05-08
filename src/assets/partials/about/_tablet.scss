@@ -1,0 +1,32 @@
+@mixin tab-let {
+  .about {
+    width: 100%;
+
+    .inner {
+      width: 95%;
+      .h2 {
+        font-size: 3rem;
+        padding: 0.9rem;
+      }
+
+      hr {
+        margin: 50px 0;
+      }
+
+      .p,
+      ul,
+      li {
+        line-height: 1.6;
+        font-size: 1.4rem;
+      }
+
+      .technologies {
+        margin-bottom: 50px;
+      }
+
+      .arrow {
+        display: none;
+      }
+    }
+  }
+}

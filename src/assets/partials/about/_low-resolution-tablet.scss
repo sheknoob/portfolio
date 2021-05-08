@@ -1,0 +1,31 @@
+@mixin low-resolution-tablet {
+  .about {
+    width: 95%;
+
+    .inner {
+      .h2 {
+        font-size: 3.5rem;
+        padding: 0.9rem;
+      }
+
+      hr {
+        margin: 40px 0;
+      }
+
+      .p,
+      ul,
+      li {
+        line-height: 2.2;
+        font-size: 1.3rem;
+      }
+
+      .technologies {
+        margin-bottom: 40px;
+      }
+
+      .arrow {
+        display: none;
+      }
+    }
+  }
+}

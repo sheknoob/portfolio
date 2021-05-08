@@ -1,0 +1,166 @@
+<section class="about">
+  <div class="p-profile"></div>
+  <div class="inner">
+    <section>
+      
+      <h2 class="h2">Hello!</h2>
+
+      <p class="p" style="text-align:center">
+        My name is Abhishek Antony, I'm living in Kochi, India and I'm {{ age }} years old.
+      </p>
+
+      <!--<ul class="languages">
+        I speak 2 languages:
+        <ng-container *ngFor="English and Malayalam">
+          <li>
+            {{ language }}           
+          </li>
+        </ng-container>
+      </ul>--> <!--"let language of languages"--> 
+
+      <p class="p" style="text-align:center">
+        During my free time, I either; play games, watch anime or enhance my programming skills.
+      </p>
+
+      <p class="p" style="text-align:center">I have studied basics of python and mysql. 
+        Currently doing a part-time video game course by XAMK Open University
+        </p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2 class="h2">Education</h2>
+
+      <p class="p" style="text-align:center">
+        I completed my 10th grade at <a href="https://santamaria.in/" title="Santa Maria Senior Secondary School" target="_blank">
+        Santa Maria Senior Secondary School 
+        </a>&nbsp; in 2018 
+      </p>
+
+      <p class="p" style="text-align:center">
+        I completed my higher school studies at <a href="https://no4cochin.kvs.ac.in/" title="KV INS Dronacharya" target="_blank">
+          KV INS Dronacharya 
+          </a>&nbsp;in 2020
+      </p>
+
+      <p class="p" style="text-align:center">
+        Currently I'm doing B.Tech Computer Science Degree at <a href="http://kmeacollege.ac.in/" title="KMEA Engineering College" target="_blank">
+          KMEA Engineering College
+      </a>
+      </p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2 class="h2">Projects</h2>
+
+      <p class="p" style="text-align: center;">
+        This is my very first webpage.
+      </p>
+
+      <p class="p" style="text-align: center;">
+        Made using Angular , Nodejs , scss , html
+      </p>
+    </section>
+    
+    
+    <hr>
+    <section>
+      <h2 class="h2">Personal Intrests</h2>
+
+      <p class="p" style="text-align: center;">
+        I am very much intrested in <br>
+        * learning about game development <br>
+        * learn how to make animated videos <br>
+        * also about ethical hacking
+
+      </p>
+    </section>
+    <hr>
+
+    <section>
+      <h2 class="h2">My Achievements</h2>
+
+      <p class="p" style="text-align: center;">
+        Member of Hackclub <br>
+        Member of TinkerHub <br>
+
+      
+      </p>
+      <hr>
+    </section>
+
+    
+<section>
+    <h2 class="h2">My Technology Stack</h2>
+
+    <section class="technologies">
+      <div class="technologies-1 technologies-2">
+        <ul class="technology-stack">
+          <span>Front-End:</span>
+          <ng-container *ngFor="let frontEndStack of frontEndStacks">
+            <li>
+              {{ frontEndStack }}
+            </li>
+          </ng-container>
+        </ul>
+      </div>
+
+      <div class="technologies-1 technologies-2">
+        <ul class="technology-stack">
+          <span>Back-End:</span>
+          <li>
+            {{ backEndStack }}
+          </li>
+        </ul>
+      </div>
+
+      <div class="technologies-1 technologies-2">
+        <ul class="technology-stack">
+          <span>Other:</span>
+          <ng-container *ngFor="let otherStack of otherStacks">
+            <li>
+              {{ otherStack }}
+            </li>
+          </ng-container>
+        </ul>
+      </div>
+</section>
+      
+
+        <div class="reach">
+           <hr>
+            <div
+             class="arrow"
+            [class.is-shown]="isArrowShown"
+            (click)="scrollToTop()">
+           <i
+           class="fas fa-arrow-up fa-1x"
+            title="Scroll up">
+           </i>
+           </div>
+             </div>
+          </section>
+<section>
+  <div class="form">
+    <div class="contact"><u><font size="+7">CONTACT ME</font></u></div>
+      <br>
+    <p style="text-align: center;"><u><b><font size="+2">Ping Me here</font></b></u></p><br>
+     <div class="details" style="text-align: center;"> 
+      <form action="/action_page.php"><br>
+       <label for="fname">First name:</label><br>
+       <input type="text" id="fname" name="fname" value=""><br>
+       <label for="lname">Last name:</label><br>
+       <input type="text" id="lname" name="lname" value=""><br>
+       <label for="message">Message:</label><br>
+       <input type="text" id="message" value=""><br>
+       <input type="submit" value="Submit">
+     </form> <br>
+     <br></div>
+    </div><hr>
+</section>
+
+
+<app-footer></app-footer>

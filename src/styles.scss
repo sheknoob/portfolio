@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+@import "./assets/partials/scrollbar";
+
+@import "./assets/partials/media-queries/media-portfolio";
+
+@import "./assets/partials/animations";
+
+@import "./assets/partials/colors";
+
+@import "./assets/partials/media-queries/media-task-manager";
+
+@import "./assets/partials/cookie-consent";
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  height: 100%;
+  line-height: 1.6;
+  background-color: $primary-background-color;
+}
+
+.dialog .mat-dialog-container {
+  background-color: $primary-background-color-lighten;
+  color: #cacaca;
+  color: $primary-color;
+
+  border-radius: 25px;
+  box-shadow: -2px 2px 5px 0 rgba(0, 0, 0, 1);
+}
+
+a {
+  color: #cacaca;
+}
+
+@include scrollBar;
+
+@include lowResolutionTablet;
+
+@include cookie-consent;
